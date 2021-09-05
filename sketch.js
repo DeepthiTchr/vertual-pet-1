@@ -11,7 +11,7 @@ function setup() {
   dog=createSprite(300,300,150,150);
   dog.addImage(dogImg);
   dog.scale=0.15
-  database=firebase.database
+  database=firebase.database()
   foodStock=database.ref('Food');
   foodStock.on("value",readStock);
 
